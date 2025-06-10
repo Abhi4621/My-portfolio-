@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhi Pandey - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <style>
+    /* original styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background-color: rgb(0, 0, 33); color: white; scroll-behavior: smooth; }
+    nav { display: flex; justify-content: space-around; align-items: center; height: 80px; background-color: rgb(18, 18, 62); }
+    nav ul { display: flex; justify-content: center; }
+    nav ul li { list-style: none; margin: 0 23px; cursor: pointer; }
+    nav ul li a { text-decoration: none; color: white; }
+    nav ul li a:hover { color: rgb(153, 153, 256); font-size: 1.01rem; }
+    main hr { border: 0; background: #9c97f1; height: 1.2px; margin: 40px 84px; }
+    .left { font-size: 1.5rem; }
+    .firstSection { display: flex; justify-content: space-around; align-items: center; margin: 130px 0; }
+    .firstSection > div { width: 30%; }
+    .leftSection { font-size: 3rem; margin: 70px; }
+    .rightSection img { margin: 50px 0; width: 80%; }
+    .purple { color: rgb(178, 187, 228); }
+    #element { color: rgb(178, 187, 228); }
+    .text-gray { color: gray; }
+    .secondSection { max-width: 80vw; margin: auto; height: 80vh; }
+    .secondSection h1 { font-size: 1.9rem; }
+    .secondSection .box { background: white; width: 85vw; height: 2px; margin: 56px 0; display: flex; }
+    .secondSection .vertical { height: 93px; width: 1px; background-color: white; margin: 0 120px; }
+    .image-top { width: 23px; position: relative; top: -32px; left: -9px; }
+    .vertical-title { position: relative; top: 75px; font-weight: bold; width: 150px; font-size: 14px; }
+    .vertical-desc { position: relative; top: 86px; color: gray; width: 150px; font-size: 9px; }
+    footer { background-color: #0e0e1a; }
+    .footer { display: flex; padding: 23px 122px; justify-content: space-evenly; }
+    .footer ul { list-style: none; }
+    .footer > div { width: 233px; }
+    footer .rights { text-align: center; color: grey; padding: 12px; }
+    .leftSection .buttons { padding: 50px 0; }
+    .leftSection .btn { font-size: 3rem; padding: 12px; background-color: #1e2167; color: white; border: 2px solid white; border-radius: 6px; font-size: 20px; cursor: pointer; }
+    /* Projects Section */
+    .projects { max-width: 80vw; margin: 80px auto; }
+    .projects h2 { font-size: 2rem; margin-bottom: 32px; text-align: center; }
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px,1fr)); gap: 24px; }
+    .project-card { background: rgb(18,18,62); padding: 20px; border-radius: 8px; transition: transform .3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img { width:100%; border-radius:4px; }
+    .project-card h3 { margin: 16px 0 8px; }
+    .project-card p { color: gray; font-size: .9rem; }
+    .project-card button { margin-top: 12px; padding: 8px 16px; background: #1e2167; color: white; border: none; border-radius: 4px; cursor: pointer; transition: background .2s; }
+    .project-card button:hover { background: #2a2e8c; }
+    /* Contact Section */
+    #contact { max-width: 60vw; margin: 80px auto; padding: 40px; background: rgb(18,18,62); border-radius: 8px; }
+    #contact h2 { text-align:center; margin-bottom:24px; }
+    #contact form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    #contact label { margin-bottom:4px; font-size: .9rem; }
+    #contact input, #contact textarea { width: 100%; padding:12px; border-radius:4px; border:1px solid #555; background: #0e0e1a; color:white; font-family: inherit; }
+    #contact textarea { grid-column: span 2; resize: vertical; height: 150px; border-radius:4px; }
+    #contact button { grid-column: span 2; padding:12px; background: #04AA6D; color:white; border:none; border-radius:4px; font-size:1rem; cursor: pointer; }
+    #contact button:hover { background: #039158; }
+    /* AOS tweaks */
+    [data-aos] { opacity: 0; transition-property: opacity, transform; }
+    [data-aos].aos-animate { opacity: 1; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Abhi Pandey Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Project</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Abhi</span>
+        <div>and I am a Web Developer</div>
+        <div>and I am passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="PngItem_1127587.png" alt="Developer Illustration">
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="secondSection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="developer.png" alt="">
+          <div class="vertical-title">HTML Developer (2010-2012)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet...</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="0860612490d9d39c85fe5736ac5fb7b7.png" alt="">
+          <div class="vertical-title">Node js Developer- HTML (2012-2014)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet...</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="youtube-logo-png-46022.png" alt="">
+          <div class="vertical-title">HTML Developer- Youtube (2010-2012)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet...</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="facebook-icon-png-761.png" alt="">
+          <div class="vertical-title">HTML Developer - Facebook (2010-2012)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet...</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="instagram-icon-971.jpg" alt="">
+          <div class="vertical-title">HTML Developer - Instagram (2010-2012)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet...</div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="logo-whatsapp-png-46041.png" alt="">
+          <div class="vertical-title">HTML Developer - WhatsApp (2010-2012)</div>
+          <div class="vertical-desc">Lorem ipsum dolor sit amet...</div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" data-aos="fade-up">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" data-aos="zoom-in">
+          <img src="project1.png" alt="Project 1 screenshot">
+          <h3>Project One</h3>
+          <p>A short description highlighting the project.</p>
+          <button onclick="window.location='#';">View Details</button>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="project2.png" alt="Project 2 screenshot">
+          <h3>Project Two</h3>
+          <p>A short description highlighting the project.</p>
+          <button onclick="window.location='#';">View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..." required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email..." required>
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject..." required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Abhi Pandey Developer Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li><li>About</li><li>Services</li><li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li><li>About</li><li>Services</li><li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li><li>About</li><li>Services</li><li>Contact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rights">
+      Copyright © www.abhiportfolio.com | All rights reserved
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+      typeSpeed: 50,
+    });
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
